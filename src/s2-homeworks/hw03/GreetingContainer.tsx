@@ -69,7 +69,7 @@ function GreetingContainer(props: GreetingContainerPropsType) {
     }
 
     const totalUsers = props.users.length // need to fix
-    const lastUserName = props.users[props.users.length-1].name // need to fix
+    const lastUserName = props.users.length > 0 ? props.users[props.users.length - 1].name : '' // need to fix
 
     return (
         <Greeting
