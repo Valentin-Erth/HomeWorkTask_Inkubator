@@ -1,70 +1,82 @@
 .greetingForm {
-    /*display: flex;*/
-    /*align-items: flex-start;*/
+    padding-bottom: 100px;
+    font-family: 'Montserrat';
 }
 
 .inputAndButtonContainer {
+    margin-top: 9px;
     display: flex;
-    margin: 5px;
+    gap: 12px;
 }
 
 .error {
     color: red;
-    height: 21px;
-    margin-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 .input {
-    padding: 5px 15px;
-    margin: 10px;
-    max-resolution: 5px;
-    color:#000000;
-    background:#cc9c00;
+    width: 372px;
+    height: 36px;
+    color: #0059b3;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    padding-left: 10px;
 }
 
 .input:focus {
-    outline: none;
-    border: #0059b2 solid 2px;
-    background:#06c;
+    border: 2px solid #D1D1D1;
 }
 
 .errorInput {
-    margin: 10px;
-    border: red 1px solid;
-    outline: none;
+    width: 372px;
+    height: 36px;
+    border: 1px solid #CC0000;
+    border-radius: 5px;
+    padding-left: 10px;
 }
 
 .button {
-    margin: 10px;
-    background: #06c;
+    background: #0066CC;
+    opacity:1;
+    border: none;
+    border-radius: 3px;
+    width: 78px;
+    height: 36px;
     color: white;
-
-    border: 1px solid ;
-    border-radius: 15px;
-    outline: none;
-
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 14px;
-    cursor: pointer;
+    line-height: 20px;
 }
 
 .button:focus {
-    outline: #cc9c00 solid  1px;
+    background: #0066CC;
+    border-radius: 3px;
 }
 
 .button:active {
-    background:#cc9c00;
+    background: #0066CC;
+    border-radius: 3px;
+    color: #FFFFFF;
 }
 
 .button:disabled {
-     color: grey;
-     }
+    color: grey;
+    opacity: 0.5;
+}
 
 .text {
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .greeting {
-    color: brown;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
 }
