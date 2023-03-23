@@ -1,13 +1,13 @@
 .radio {
     display: flex;
     flex-direction: column;
-  appearance: none;
-    height: 24px;
-    width: 24px;
-    cursor: pointer;
-    border-radius: 50%;
-    outline: none;
-    border: 1px solid #000000;
+  /*appearance: none;*/
+  /*  height: 24px;*/
+  /*  width: 24px;*/
+  /*  cursor: pointer;*/
+  /*  border-radius: 50%;*/
+  /*  outline: none;*/
+  /*  border: 1px solid #000000;*/
 }
 
 .radio::before {
