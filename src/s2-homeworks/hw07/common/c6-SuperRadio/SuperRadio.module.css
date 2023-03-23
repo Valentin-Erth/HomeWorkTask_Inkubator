@@ -1,15 +1,29 @@
 .radio {
+    display: flex;
+    flex-direction: column;
+  appearance: none;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #000000;
 }
 
 .radio::before {
+    background: #5c3100;
 }
 
 
 .radio:checked::before {
+    background: #000000;
 }
 
 .label {
+    cursor: pointer;
 }
 
 .options {
+
+
 }

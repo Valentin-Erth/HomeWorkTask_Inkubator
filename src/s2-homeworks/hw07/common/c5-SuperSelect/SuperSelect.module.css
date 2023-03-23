@@ -1,9 +1,29 @@
 .select {
+    margin-right: 100px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    width: 180px;
+    height: 25px;
+    padding: 5px;
+    padding-right: 30px;
+    cursor: pointer;
+    appearance: none;
+    /* вставить стрелку*/
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 2px;
 }
 
 .select:focus {
+    outline: none;
+    border: 1px solid #000000;
 }
 
 
 .option:hover {
+    background: #1E90FF;
+    transition: all .4s ease-in-out;
 }
