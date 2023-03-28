@@ -1,22 +1,24 @@
 .radio {
     display: flex;
     flex-direction: column;
+    transition: 0.2s all linear;
+
   /*appearance: none;*/
-  /*  height: 24px;*/
-  /*  width: 24px;*/
-  /*  cursor: pointer;*/
-  /*  border-radius: 50%;*/
-  /*  outline: none;*/
-  /*  border: 1px solid #000000;*/
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #000000;
 }
 
 .radio::before {
-    background: #5c3100;
+    /*background: #5c3100;*/
 }
 
 
 .radio:checked::before {
-    background: #000000;
+    background: #0004ff;
 }
 
 .label {
@@ -24,6 +26,8 @@
 }
 
 .options {
-
+    /*border: 1px solid #000000;*/
+    /*background: #1E90FF;*/
+    transition: all .4s ease-in-out;
 
 }
