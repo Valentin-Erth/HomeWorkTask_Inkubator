@@ -1,3 +1,9 @@
 import s from './Loader.module.css'
-
-export const Loader = () => <div className={s.loader}/>
+import CircularProgress from '@mui/material/CircularProgress';
+export const Loader = () => {
+    return (
+        <div className={s.loader}>
+            <CircularProgress />
+        </div>
+    )
+}
