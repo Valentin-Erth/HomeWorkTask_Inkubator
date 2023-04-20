@@ -3,7 +3,9 @@
     padding: 50px 70px 0px 70px;
 }
 
-.hw {}
+.hw {
+    margin-bottom: 50px;
+}
 
 .hwTitle {
     font-weight: 600;
