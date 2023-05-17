@@ -1,27 +1,58 @@
 .tech {
     width: 50vw;
+    padding: 5px;
 }
 
 .developer {
-
+    width: 50vw;
+    padding: 5px;
 }
 
 .techHeader {
     width: 50vw;
+    padding: 5px;
 }
 
 .developerHeader {
-
+    width: 50vw;
+    padding: 5px;
 }
 
 .row {
     display: flex;
+    width: 606px;
+    height: 36px;
+    border-bottom: 1px solid grey;
 }
 
 .rowHeader {
     display: flex;
+    width: 606px;
+    height: 36px;
+    background: #E5E5E5;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .loading {
-
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 606px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.6); /* прозрачный черный цвет */
+    z-index: 1; /* значение z-index меньше, чем у крутилки */
+}
+.wrapper{
+    position: relative;
+    /*z-index: 3;*/
 }

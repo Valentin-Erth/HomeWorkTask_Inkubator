@@ -1,11 +1,11 @@
 .select {
-    margin-right: 100px;
+    margin-right: 70px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    width: 180px;
+    width: auto;
     height: 25px;
     padding: 5px;
     padding-right: 30px;

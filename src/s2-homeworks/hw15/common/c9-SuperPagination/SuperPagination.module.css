@@ -1,11 +1,21 @@
 .pagination {
     display: flex;
+    margin-bottom: 36px;
 }
 
 .text1 {
+    padding-top: 7px;
+    margin-left: 32px;
+    margin-right: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #0D0B0C;
 
 }
 
 .text2 {
-
+    font-family: 'Roboto';
+    font-style: normal;
+    color: #0D0B0C;
+    padding-top: 7px;
 }

@@ -3,7 +3,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 export const Loader = () => {
     return (
         <div className={s.loader}>
-            <CircularProgress />
+            <CircularProgress style={{height:"100px",width:"100px"}}/>
         </div>
     )
 }

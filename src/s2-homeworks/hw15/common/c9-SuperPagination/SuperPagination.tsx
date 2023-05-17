@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {ChangeEvent} from 'react'
 import SuperSelect from '../../../hw07/common/c5-SuperSelect/SuperSelect'
 import {Pagination} from '@mui/material'
 import s from './SuperPagination.module.css'
+import Stack from '@mui/material/Stack';
 
 export type SuperPaginationPropsType = {
     id?: string
@@ -16,14 +17,21 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
         page, itemsCountForPage, totalCount, onChange, id = 'hw15',
     }
 ) => {
-    const lastPage = 10 // пишет студент // вычислить количество страниц
-
+    const lastPage = Math.ceil(totalCount / itemsCountForPage) // пишет студент // вычислить количество страниц
+    console.log(lastPage + " lastPage")
     const onChangeCallback = (event: any, page: number) => {
+        // debugger
         // пишет студент
+        console.log(page + "Current page")
+        onChange(page, event.currentTarget.value ? event.currentTarget.value : itemsCountForPage)
     }
 
-    const onChangeSelect = (event: any) => {
+    const onChangeSelect = (event: ChangeEvent<HTMLSelectElement>) => {
         // пишет студент
+        console.log(event)
+        onChangeCallback(event, page)
+        // onChange(Number(event.currentTarget.value),itemsCountForPage)
+
     }
 
     return (
@@ -38,10 +46,13 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
                 onChange={onChangeCallback}
                 hideNextButton
                 hidePrevButton
+                color={"primary"}
+                // variant={"outlined"}
             />
 
+
             <span className={s.text1}>
-                показать
+                Показать
             </span>
 
             <SuperSelect
@@ -53,10 +64,11 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
                     {id: 10, value: 10},
                 ]}
                 onChange={onChangeSelect}
+
             />
 
             <span className={s.text2}>
-                строк в таблице
+                Cтрок в таблице
             </span>
         </div>
     )
